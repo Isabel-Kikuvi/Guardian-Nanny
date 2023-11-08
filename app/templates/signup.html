@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Guardian Nanny</title>
-    <link rel="stylesheet" type="text/css" href="static/styles/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Guardian Nanny</h1>
-        <p>Ensuring Trust, One Nanny at a Time</p>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">Info</a></li>
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+{% extends "base.html" %}
+
+{% block content %}
 
     <section class="signup">
         <h2>Create an Account</h2>
@@ -36,8 +18,5 @@
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Guardian Nanny</p>
-    </footer>
-</body>
-</html>
+    {% endblock %}
+

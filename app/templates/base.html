@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Nanny - Your Trusted Childcare Solution</title>
+    <link rel="stylesheet" type="text/css" href="static/styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Guardian Nanny</h1>
+        <p>Ensuring Trust, One Nanny at a Time</p>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+                <li><a href="{{ url_for('login') }}">Log In</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+            <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    {% block content %}{% endblock %}   
+    <footer>
+        <p>&copy; 2023 Guardian Nanny</p>
+    </footer>
+    
+</body>
+</html>
