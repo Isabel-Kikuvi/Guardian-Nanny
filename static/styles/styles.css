@@ -1,0 +1,105 @@
+
+/* Global Styles */
+body {
+    background-color: #f3f3f3; /* Grey background */
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #ffc107; /* Yellow header background */
+    color: #333; /* Text color */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  /* Navigation Menu (About, Sign Up, Log In) */
+  nav {
+    background-color: #333; /* Dark grey background */
+    color: #fff; /* Text color */
+    text-align: left;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #ffc107; /* Yellow link color */
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+  }
+  
+  /* Content Sections (About, Sign Up, Log In, Contact) */
+  .section {
+    background-color: #fff; /* White background for content sections */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #ffc107; /* Yellow button background */
+    color: #333; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Links */
+  a {
+    color: #333; /* Text color for links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  label, input {
+    margin: 10px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #eee; /* Light grey background for contact section */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333; /* Dark grey footer background */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav {
+      text-align: center;
+    }
+  
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .section {
+      margin: 10px;
+    }
+  
+    form {
+      flex-direction: column;
+    }
+  }
+  
