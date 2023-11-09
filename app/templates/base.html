@@ -27,6 +27,15 @@
         </ul>
         {% endif %}
         {% endwith %}
+        <div>
+            Guardian Nanny:
+            <a href="{{ url_for('index') }}">Home</a>
+            {% if current_user.is_anonymous %}
+            <a href="{{ url_for('login') }}">Login</a>
+            {% else %}
+            <a href="{{ url_for('logout') }}">Logout</a>
+            {% endif %}
+        </div>
     {% block content %}{% endblock %}   
     <footer>
         <p>&copy; 2023 Guardian Nanny</p>
