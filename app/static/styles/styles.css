@@ -4,6 +4,7 @@ body {
     background-color: #f3f3f3; /* Grey background */
     font-family: Arial, sans-serif;
   }
+
   
   header {
     background-color: #ffc107; /* Yellow header background */
@@ -11,6 +12,7 @@ body {
     text-align: center;
     padding: 20px;
   }
+  
   
   h1 {
     font-size: 36px;
